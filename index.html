@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/plr5ddt.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"></head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="profile">
+                <div class="icons">
+                    <i class="far fa-bell"></i>
+                    <i class="far fa-envelope"></i>
+                </div>
+                <div class="profile_picture">
+                    <img src="./images/profile.png" alt="profile picture">
+                </div>
+                <div class="name">
+                    <h2>Piotr Brzezinski</h2>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="menu_list">
+                <div class="szukaj list_item">
+                    <input type="text" placeholder="Szukaj">
+                </div>
+                <div class="book_list list_item">
+                    <i class="fas fa-book"></i>
+                    <a href=""><p>Lista ksiązek</p></a>
+                </div>
+                <div class="my_books list_item">
+                    <i class="fas fa-bookmark"></i>
+                    <a href=""><p>Moje ksiazki</p></a>
+                </div>
+                <div class="check_payments list_item">
+                    <a href="">
+                        <button>Sprawdź zaległości</button>
+                    </a>
+                </div>
+                <div class="history list_item">
+                    <i class="fas fa-history"></i>
+                    <a href=""><p>Historia wypozyczeń</p></a>
+                </div>
+                <div class="line"></div>
+                <div class="settings list_item">
+                    <i class="fas fa-sliders-h"></i>
+                    <a href=""><p>Ustawienia</p></a>
+                </div>
+                <div class="logout list_item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a href=""><p>Wyloguj się</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="banner">
+                <img src="" alt="">
+            </div>
+            <div class="my_books">
+                <div class="top_bar">
+                    <div class="header">
+                        <p>Moje ksiazki</p>
+                    </div>
+                   <a href=""><button><a href="">Pokaz wszystkie</a></button>
+                </div>
+                <div class="my_library js-flickity">
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+</body>
+</html>
