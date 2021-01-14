@@ -30,6 +30,8 @@ i {
 		text-decoration: none;
 		border-radius: 25px;
 		min-width: 300px;
+		overflow-y: auto;
+		scrollbar-width: none;
 		.profile {
 			display: flex;
 			flex-direction: column;
@@ -37,6 +39,7 @@ i {
 			.icons {
 				display: flex;
 				justify-content: space-between;
+				font-size: 1.5rem;
 			}
 			.profile_picture {
 				margin: 40px 0;
@@ -65,6 +68,7 @@ i {
 			font-family: 'Open Sans', sans-serif;
 			display: flex;
 			flex-direction: column;
+
 			.check_payments {
 				width: 100%;
 				a {
@@ -77,13 +81,6 @@ i {
 				border: 1px solid #5ae0a2;
 				margin-bottom: 40px;
 			}
-			// .book_list,
-			// .my_books,
-			// .history,
-			// .settings,
-			// .logout {
-			// 	// padding-left: 20px;
-			// }
 			.list_item {
 				display: flex;
 				margin-bottom: 40px;
@@ -123,6 +120,9 @@ i {
 			}
 		}
 	}
+	.menu::-webkit-scrollbar {
+		display: none;
+	}
 
 	.content {
 		display: flex;
@@ -132,6 +132,7 @@ i {
 		margin: 40px 40px 40px 20px;
 		padding: 40px;
 		border-radius: 25px;
+
 		.banner {
 			background-color: #428968;
 			width: 100%;
@@ -171,7 +172,7 @@ i {
 			.my_library {
 				display: grid;
 				grid-gap: 40px;
-				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 				overflow: hidden;
 				grid-auto-rows: 100%;
 				height: 100%;
@@ -183,7 +184,7 @@ i {
 					// width: 50%;
 					height: 100%;
 					border-radius: 25px;
-					padding: 30px 30px 60px;
+					// padding: 30px 30px 60px;
 					img { 
 						height: 100%;
 						border-radius: 25px;

@@ -48,6 +48,8 @@ i {
   text-decoration: none;
   border-radius: 25px;
   min-width: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .container .menu .profile {
@@ -68,6 +70,7 @@ i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 1.5rem;
 }
 
 .container .menu .profile .profile_picture {
@@ -181,6 +184,10 @@ i {
   margin-left: 20px;
 }
 
+.container .menu::-webkit-scrollbar {
+  display: none;
+}
+
 .container .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,8 +260,8 @@ i {
   display: -ms-grid;
   display: grid;
   grid-gap: 40px;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   overflow: hidden;
   grid-auto-rows: 100%;
   height: 100%;
@@ -274,7 +281,6 @@ i {
   background-color: #428968;
   height: 100%;
   border-radius: 25px;
-  padding: 30px 30px 60px;
 }
 
 .container .content .my_books .my_library .book img {
