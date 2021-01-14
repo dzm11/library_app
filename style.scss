@@ -169,13 +169,11 @@ i {
 				}
 			}
 			.my_library {
-				// display: flex;
 				display: grid;
 				grid-gap: 40px;
 				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 				overflow: hidden;
 				grid-auto-rows: 100%;
-				// padding-bottom: 40px;
 				height: 100%;
 				.book {
 					display: flex;
@@ -186,7 +184,7 @@ i {
 					height: 100%;
 					border-radius: 25px;
 					padding: 30px 30px 60px;
-					img {
+					img { 
 						height: 100%;
 						border-radius: 25px;
 					}
