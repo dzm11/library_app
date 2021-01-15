@@ -178,9 +178,6 @@ i {
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
-			img{
-				
-			}
 		}
 		.my_books {
 			display: flex;
@@ -276,5 +273,14 @@ i {
 		}
 	}
 }
+}
 
+@media (max-width: 640px) {
+	.container{
+		height: 100%;
+		.content{
+			padding: 40px 5px 5px 5px;
+			margin: 40px 5px 5px 5px
+		}
+	}
 }
