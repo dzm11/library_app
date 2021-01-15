@@ -10,7 +10,7 @@
 }
 .mobile_menu{
 	display: none;
-position: absolute;
+position: fixed;
 left: 50%;
 margin-left: -100px;
 top: 10px;
@@ -281,6 +281,16 @@ i {
 		.content{
 			padding: 40px 5px 5px 5px;
 			margin: 40px 5px 5px 5px
+		}
+		.menu{
+			padding: 40px 20px 20px 20px;
+			margin: 40px 5px 5px 5px;
+			min-width: 0;
+			.profile{
+				.icons{
+					padding: 0 20px;
+				}
+			}
 		}
 	}
 }

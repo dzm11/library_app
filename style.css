@@ -14,7 +14,7 @@
 
 .mobile_menu {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 50%;
   margin-left: -100px;
   top: 10px;
@@ -379,6 +379,14 @@ i {
   .container .content {
     padding: 40px 5px 5px 5px;
     margin: 40px 5px 5px 5px;
+  }
+  .container .menu {
+    padding: 40px 20px 20px 20px;
+    margin: 40px 5px 5px 5px;
+    min-width: 0;
+  }
+  .container .menu .profile .icons {
+    padding: 0 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
