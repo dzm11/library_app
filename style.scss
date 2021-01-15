@@ -29,7 +29,7 @@ i {
 		list-style: none;
 		text-decoration: none;
 		border-radius: 25px;
-		min-width: 300px;
+		min-width: 400px;
 		overflow-y: auto;
 		scrollbar-width: none;
 		.profile {
@@ -44,6 +44,8 @@ i {
 			.profile_picture {
 				margin: 40px 0;
 				img {
+					box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.1);
+					border: 2px solid white;
 					height: 140px;
 					width: 140px;
 					border-radius: 50%;
@@ -123,6 +125,12 @@ i {
 	.menu::-webkit-scrollbar {
 		display: none;
 	}
+	.content::-webkit-scrollbar {
+		display: none;
+	}
+	.my_library::-webkit-scrollbar{
+		display: none;
+	}
 
 	.content {
 		display: flex;
@@ -132,12 +140,19 @@ i {
 		margin: 40px 40px 40px 20px;
 		padding: 40px;
 		border-radius: 25px;
-
+		overflow-y: scroll;
 		.banner {
 			background-color: #428968;
 			width: 100%;
-			height: 1200px;
+			min-height: 560px;
 			border-radius: 25px;
+			background-image: url(./images/banner_2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			img{
+				
+			}
 		}
 		.my_books {
 			display: flex;
@@ -167,27 +182,38 @@ i {
 						text-decoration: none;
 						color: white;
 					}
+
 				}
 			}
 			.my_library {
 				display: grid;
 				grid-gap: 40px;
 				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-				overflow: hidden;
-				grid-auto-rows: 100%;
+				overflow: scroll;
+				grid-auto-rows: revert;
 				height: 100%;
 				.book {
 					display: flex;
+					flex-direction: column;
 					justify-content: center;
-					flex-direction: row;
-					background-color: #428968;
-					// width: 50%;
-					height: 100%;
+					align-items: center;
+					background-color: #5ae0a2;
+					height: 400px;
+					min-height: 400px;
 					border-radius: 25px;
-					// padding: 30px 30px 60px;
-					img { 
-						height: 100%;
+					padding: 20px 20px 0px;
+
+					img {
+						display: block;
 						border-radius: 25px;
+						margin-bottom: 20px;
+						box-shadow: 10px 10px 40px 0px rgba(66,137,104,0.4);
+					}
+					p{
+						font-size: 18px;
+						font-family: 'Open Sans', sans-serif;
+						// color: #428968;
+						color: white;
 					}
 				}
 				// .book:not(:last-child) {
